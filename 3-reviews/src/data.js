@@ -6,7 +6,8 @@ const reviews = [
         image:
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
         text:
-            "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat fermentum sodales. Suspendisse' +
+            ' fringilla mi vel mollis gravida. Vestibulum eleifend ante ut mauris tempor.',
     },
     {
         id: 2,
@@ -15,7 +16,7 @@ const reviews = [
         image:
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
         text:
-            'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at mattis nulla, sed convallis ante. Maecenas dictum, augue nec ornare viverra, metus turpis ornare ipsum.',
     },
     {
         id: 3,
@@ -24,7 +25,7 @@ const reviews = [
         image:
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
         text:
-            'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium dolor in ex hendrerit viverra. Nulla commodo dignissim enim, sit amet consequat metus finibus ac.',
     },
     {
         id: 4,
@@ -33,7 +34,7 @@ const reviews = [
         image:
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
         text:
-            'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempor, neque in sagittis volutpat, dolor massa tempor mauris, nec sagittis felis diam eu purus. Nullam.',
     },
 ];
 
