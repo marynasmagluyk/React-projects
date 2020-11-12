@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import data from './data';
 
 function App() {
@@ -7,19 +7,39 @@ function App() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        let amount = parseInt(count);
+
+        if (amount <= 0) {
+            amount = 1;
+        }
+
+        if (amount > 8) {
+            amount = 8;
+        }
+        setParagraph(data.slice(0, amount));
     };
 
     return (
         <section className='section-center'>
             <h3>tired of boring lorem ipsum ?</h3>
-            <form className='lorem-form' onSubmit={handleSubmit}>
+            <form className='lorem-form'
+                  onSubmit={handleSubmit}>
                 <label htmlFor='amount'>
                     paragraphs:
                 </label>
-                <input type='text' name='amount' id='amount' value={count} onChange={(e) => setCount(e.target.value)}/>
+                <input type='number'
+                       name='amount'
+                       id='amount'
+                       value={count}
+                       onChange={(e) => setCount(e.target.value)}/>
+                <button className='btn'
+                        type='submit'>Generate
+                </button>
             </form>
             <article className='lorem-text'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, minus?</p>
+                {paragraph.map((text, index) => {
+                    return <p key={index}>{text}</p>
+                })}
             </article>
         </section>
     );
