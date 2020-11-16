@@ -251,11 +251,10 @@ Sidebar
     font-size: 1.75rem;
     background: transparent;
     border-color: transparent;
-    color: var(--clr-primary-5);
     transition: var(--transition);
     cursor: pointer;
     color: var(--clr-red-dark);
-    margin-top: 0.2rem;
+    margin-top: 1rem;
 }
 .close-btn:hover {
     color: var(--clr-red-light);
@@ -296,7 +295,7 @@ Sidebar
 }
 .social-icons a {
     font-size: 1.5rem;
-    margin: 0 0.5rem;
+    margin: 0 .5rem;
     color: var(--clr-primary-5);
     transition: var(--transition);
 }
