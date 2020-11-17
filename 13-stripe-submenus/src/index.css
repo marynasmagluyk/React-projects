@@ -217,6 +217,7 @@ Stripe Styles
 }
 
 /* nav media query */
+/*примени стили когда ширина экрана 800 пикселей и больше */
 @media screen and (min-width: 800px) {
     .nav-center {
         display: grid;
@@ -236,7 +237,6 @@ Stripe Styles
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
         height: 100%;
-        display: grid;
         align-items: center;
     }
     .nav-links li {
