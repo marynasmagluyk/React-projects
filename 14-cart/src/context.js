@@ -1,4 +1,4 @@
-import React, { useState, useContext, useReducer, useEffect } from 'react'
+import React, { useContext, useReducer, useEffect } from 'react'
 import cartItems from './data'
 import reducer from './reducer'
 
@@ -31,6 +31,10 @@ const AppProvider = ({ children }) => {
         dispatch({type: 'DECREASE', payload: id})
     };
 
+    const toggleAmount = (id, type) => {
+        dispatch({type: 'TOGGLE', payload:{id, type}})
+    };
+
     const fetchData = async () => {
         dispatch({type: 'LOADING'});
 
@@ -56,6 +60,7 @@ const AppProvider = ({ children }) => {
                 remove,
                 increase,
                 decrease,
+                toggleAmount,
             }}
         >
             {children}
