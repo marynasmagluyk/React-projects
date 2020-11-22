@@ -4,11 +4,13 @@ import Loading from './Loading'
 import { useGlobalContext } from '../context'
 
 const CocktailList = () => {
+     const {cocktails, loading} = useGlobalContext();
+
     return (
         <div>
             <h2>cocktail list component</h2>
         </div>
     )
-}
+};
 
 export default CocktailList
